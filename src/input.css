@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
+@import "tailwindcss";
+@theme {
+    --color-primary: hsl(180, 29%, 50%);
+    --color-background-neutral: hsl(180, 14%, 20%);
+    --color-background-green: hsl(180, 52%, 96%);
+    --color-neutral-gray-400:hsl(180, 8%, 52%);
+    --color-myGreen: hsl(180, 93%, 89%);
+    --color-card-bg:hsl(180, 78%, 70%);
+}
+
+@utility bg-header-mobile {
+  background-image: url('/images/bg-header-mobile.svg');
+}
+
+@utility bg-header-desktop {
+  background-image: url('/images/bg-header-desktop.svg');
+}
+
+@layer base {
+    body {
+        
+        font-family: "League Spartan", sans-serif;
+        background-color: var(--color-background-green);
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply bg-myGreen text-primary py-1 px-3 rounded-md font-bold cursor-pointer hover:bg-primary hover:text-white
+    }
+}
+
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+@media(min-width: 768px) {
+    .card {
+        display: flex;
+    }
+}
+
