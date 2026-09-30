@@ -10,11 +10,11 @@
 }
 
 @utility bg-header-mobile {
-  background-image: url('/images/bg-header-mobile.svg');
+  background-image: url('../images/bg-header-mobile.svg');
 }
 
 @utility bg-header-desktop {
-  background-image: url('/images/bg-header-desktop.svg');
+  background-image: url('../images/bg-header-desktop.svg');
 }
 
 @layer base {

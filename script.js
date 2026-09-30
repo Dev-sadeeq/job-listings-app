@@ -57,8 +57,8 @@ function renderFilterContainer() {
       (tag) => `
     <div class="flex items-center bg-neutral-100 text-primary font-bold rounded overflow-hidden text-sm">
       <span class="px-3 py-1.5">${tag}</span>
-      <button data-remove="${tag}" class="bg-primary text-white px-2.5 py-2 hover:bg-neutral-900 transition-colors cursor-pointer">
-        ✕
+      <button data-remove="${tag}" aria-label="Remove ${tag} filter" class="bg-primary text-white px-2.5 py-2 hover:bg-neutral-900 transition-colors cursor-pointer">
+        <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
   `,
